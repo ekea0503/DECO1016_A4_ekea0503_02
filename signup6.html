@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to CITI!</title>
+    <link href="/style2.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+ <!-- navagation bar-->  
+
+        <div id="header">
+            
+            <nav id="menu">
+                <ul>
+                    <li ><a href="/index.html">Home</a></li>
+                    <li class="current_page_item"><a href="#" >Banking</a></li>
+                    <li><a href="#" >Credit cards</a></li>
+                    <li><a href="#" >Loans</a></li>
+                    <li><a href="#" >Contact Us</a></li>
+                    <li id="join"><a href="#">Join CITI!</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+<div class="container">   
+
+    <div class="content">
+
+
+<!-- progressbar -->  
+        <img id="progressbar"src="img/progbar4.png"alt="">
+                
+ <!-- Question information -->             
+        <h2>Passport</h2>
+        <br>
+        <p> The following questions will require you to have your Passport handy
+        <br>
+        This information is used to identify you, so we can complete your signup!
+        </p>
+
+  <!-- begin form -->           
+            <form>
+
+  <!-- citizenship question -->   
+
+                    <div class="citizenship">
+           
+            
+                            <br>
+                            <br>
+                
+                            <p>What country was your passport issued?</p>
+                            <input type="text" name="citizenship" placeholder="Australia">
+
+                    </div>
+
+<!-- passport number question -->  
+
+                <div class="passport">
+                   
+                    
+                    <br>
+                    <br>
+        
+                    <p>What is your passport number?</p>
+                    <input type="text" name="pnum" placeholder="000 000 000" required>
+                   
+        
+                </div>
+
+<!-- passport expiry question -->                  
+
+                <div class="exp">
+                        <br>
+                        <br>
+                        <p>What is the expiry date?</p>
+                        <input type="date" name="pexp" required>
+                </div>
+ 
+<!-- submit -->                 
+                <div class="submit3">
+                        <button type="submit" formaction="/dashboard.html">Next</button>
+                </div>
+    </div>
+</div>  
+</form>
+</body>
+</div>
+</html>

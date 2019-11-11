@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to CITI!</title>
+    <link href="/style2.css" rel="stylesheet" type="text/css"/>
+    <script src="/namefinder.js"></script>
+</head>
+<body>
+
+  <!-- navagation bar-->     
+        <div id="header">
+            <nav id="menu">
+                <ul>
+                    <li ><a href="/index.html">Home</a></li>
+                    <li class="current_page_item"><a href="#" >Banking</a></li>
+                    <li><a href="#" >Credit cards</a></li>
+                    <li><a href="#" >Loans</a></li>
+                    <li><a href="#" >Contact Us</a></li>
+                    <li id="join"><a href="#">Join CITI!</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+   <div class="container">   
+        <div class="content">
+
+<!-- Question information -->             
+            <h2>Hi there, we see your looking to join citi!</h2>
+            <br>
+            <p>
+            lets get to know you 
+            </p>
+
+<!-- begin form -->            
+    <form>
+
+ <!-- Name question -->        
+        <div class="name">
+           
+            
+            <br>
+            <br>
+
+            <p>What would you like us to call you?</p>
+            <input type="text" name="first_name" placeholder="Name" required>
+            
+
+        </div>
+
+ <!-- DOB question -->         
+        <div class="DOB">
+                <br>
+                <br>
+                <p>What is your Date Of Birth?</p>
+                <input type="date" name="DOB" required>
+        </div>
+
+ <!-- gender question --> 
+        <div class="gender">
+
+                <br>
+                <br>
+                <p>What is your gender?</p>
+
+                <group class="inline-radio">
+
+                        <div><input type="radio" name="title"><label>Male</label></div>
+                        <div><input type="radio" name="title" checked><label>Female</label></div>
+                        <div><input type="radio" name="title"><label>Other</label></div>
+        
+                </group>
+        </div>
+        
+<!-- submit -->  
+            <div class="submit">
+                <button type="submit" formaction="/signup2.html">Next</button>
+            </div>
+        
+       
+        </div>
+    </form>
+</div>  
+</body>
+</html>

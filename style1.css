@@ -1,0 +1,335 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+  }
+
+/* top section of page (navigation) */
+
+  
+  #header {
+    height: 100px;
+    width: 80%;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 12%;
+    margin-right: 10%;
+    text-align: center;
+     
+  }
+
+  #menu {
+    position: absolute;
+    width: 100%;
+    float: right;
+  
+  }
+  
+  #menu ul {
+    display: inline-block;
+    align-items: center;
+  }
+  
+  #menu li {
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+  }
+  
+  #menu li a, #menu li  {
+    display: inline-block;
+    margin-left: 1px;
+    padding: 0em 1.4em;
+    letter-spacing: 0.10em;
+    text-decoration: none;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    outline: 0;
+    color: white;
+    text-decoration: none;
+  }
+  
+  #menu li.current_page_item a {
+    border: #ffffff;
+    border-style: solid;
+    border-width: 0.5px;
+    text-decoration: none;
+  }
+
+  a:hover {
+  border: #ffffff;
+	border-style: solid;
+	border-width: 0.5px;
+  
+  }
+
+
+/* initial landing*/
+
+
+  #bannerimg {
+    width: 100%;
+  }
+
+
+  #citiplus {
+
+    letter-spacing: 0.10em;
+    font-size: 1vw;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top:41em;
+    color: white;
+    display: block;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  
+  }
+
+
+  #citiplus button {
+    
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    font-size: 1.1vw;
+    border: #ffffff;
+    border-style: solid;
+    border-width: 0.5px;
+    position: relative;
+    -webkit-animation: myfirst ease-in-out 2s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst ease-in-out 2s infinite;
+    animation-direction: alternate;
+
+  }
+
+  @keyframes myfirst {
+    0% {top:0px}
+    50% {top:6px}
+    100% {top:0px}
+  }
+
+  #citiplus button:hover {
+    border: #ffffff;
+    border-style: solid;
+    border-width: 4px;
+    
+    }
+
+    #citiplus a:hover {
+      text-decoration: none;
+      border: none;
+    }
+
+
+/* reviews */
+
+    .content {
+    
+      display: flex;
+      overflow: auto;
+      justify-content: center;
+      align-content: center;
+      margin: auto;
+      margin-top: 1%;
+      text-align: center;
+      font-size: 1vw;
+      padding-left: 2% ;
+      padding-right: 2% ;
+  
+    }
+
+    .column {
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+  
+    }
+
+    .column img{
+
+      
+      max-width: 500px;
+      height: 100px;
+
+    }
+
+    .content p{
+
+    padding: 2%;
+
+    }
+
+   
+ /* splitter with progress bar  */
+
+
+    #splitter {
+      width: 100%;
+      height: 20vw;
+
+      }
+
+    #splitterbe {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 70%;
+
+       }
+ 
+     #splitterb {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      border: none;
+      padding: 25px;
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+      font-size: 1.1vw;
+      border: #ffffff;
+      border-style: solid;
+      border-width: 1px;
+  
+     }
+
+     #splitterb:hover {
+      border: #ffffff;
+      border-style: solid;
+      border-width: 4px;
+      color: rgb(255, 255, 255);
+      
+      }
+
+
+/* features */
+
+
+    .cont {
+      position: relative;
+      text-align: center;
+      } 
+
+    .column2 {
+
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3%;
+    
+      }
+  
+    .column2 img{
+  
+      max-width: 400px;
+      height: 100px;
+      position: relative;
+      -webkit-animation: myfirst ease-in-out 2s infinite; /* Safari 4.0 - 8.0 */
+      -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+      animation: icons ease-in-out 2s infinite;
+      animation-direction: alternate;
+  
+    }
+  
+    @keyframes icons {
+      0% {top:0px}
+      50% {top:6px}
+      100% {top:0px}
+    }
+
+      
+
+  
+/* responsive code */
+
+      @media only screen and (max-width: 500px) {
+        
+        #header {
+          height: 100px;
+          width: 95%;
+          position: absolute;
+          margin-left: 5%;
+          margin-right: 5%;
+           
+        }
+
+        #menu li a, #menu li  {
+          
+          padding: 0em 0.8em;
+          font-size: 0.5vw;
+    
+        }
+        #bannerimg {
+        display:block ; 
+        text-align: center;
+       
+        }
+
+        .content{
+
+          display: block;
+          font-size: 0.8vw;
+          text-align: center;
+          }
+
+          .content img{
+
+          width:20%;
+          height: auto;
+          }
+
+          #citiplus {
+            top: 20%;
+            right: 30%;
+            margin: auto;
+            text-align: center;
+            width: 60%;
+            font-size: 0.2vw;
+      
+          }
+
+          #citiplus button {
+  
+            padding: 10px;
+
+          
+          }
+
+          #splitterb {
+            padding: 8px;
+
+          }
+
+
+          
+ }

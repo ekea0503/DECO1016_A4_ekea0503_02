@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to CITI!</title>
+    <link href="/style3.css" rel="stylesheet" type="text/css"/>
+    <script src="/myscipts.js"></script>
+   
+</head>
+<body>
+
+        
+<!-- navagation bar-->      
+    <div id="header">
+         <nav id="menu">
+                    <ul>
+                        <li ><a href="#">Summary</a></li>
+                        <li><a href="#" >Savings</a></li>
+                        <li><a href="#" >pay someone</a></li>
+                        <li><a href="#" >transfer</a></li>
+                        <li><a href="#" >Contact Us</a></li>
+                        <li id="join" class="current_page_item"><a href="/index.html">sign out</a></li>
+                    </ul>
+        </nav>
+    </div>
+
+<!-- greeting -->     
+    <div class="greeting">
+
+        <h2 id="greet">Welcome to CITIPLUS!</h2>
+    </div>
+            
+<!-- balance -->  
+    <div class="fundscontainer">
+
+                <p id="accname">Citiplus account</p>
+
+                <p id="money">$0.00</p>
+
+<!-- transaction history --> 
+                <p><span id="dots"></span><span id="more">No transactions yet</span></p>
+
+                <button onclick="myFunction()" id="myBtn">View History</button>
+
+    </div>
+
+<!-- pop up tasks-->  
+    <div class="callout">
+            <div class="callout-header">Account setup
+            </div>
+
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;
+            </span>
+                    
+            <div class="callout-container">
+                    <ul>
+                      <li class="done">Create an account</li>
+                      <br>
+                      <li>Open a Saver</li>
+                      <br>
+                      <li>Activate Your Card</li>
+                      <br>
+                      <li>Add to apple pay</li>
+                      <br>
+                      <li>Add your TFN</li>
+                    </ul>
+            </div>
+    </div>
+
+</body>
+
+</html>
