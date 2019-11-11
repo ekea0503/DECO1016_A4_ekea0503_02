@@ -1,291 +1,332 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  html {
-    background: lightblue;
-    /*background: url(img/formback.jpg) no-repeat center center fixed; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
-  }
+html {
+  background: url(img/formback.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
 
-  body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    color: #000000;
+body {
+  
+ 
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 11pt;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+h2 {
+
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+
+}
+
+p {
+
+  font-size: 1vw;
+
+}
+
+a {
+  text-decoration: none;
   }
 
 /* top section of page (navigation) */
 
-  #header {
-    height: 100px;
-    width: 80%;
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 12%;
-    margin-right: 10%;
-     
-  }
+#header {
+  height: 100px;
+  width: 80%;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 12%;
+  margin-right: 10%;
+  text-align: center;
+   
+}
 
-  #menu {
-    position: absolute;
-    width: 100%;
-    float: right;
-  
-  }
-  
-  #menu ul {
-    display: inline-block;
-    align-items: center;
-  }
-  
-  #menu li {
-    display: block;
-    float: left;
-    text-align: center;
-    line-height: 60px;
-  }
-  
-  #menu li a, #menu li  {
-    display: inline-block;
-    margin-left: 1px;
-    padding: 0em 1.4em;
-    letter-spacing: 0.10em;
-    text-decoration: none;
-    font-size: 1.1vw;
-    text-transform: uppercase;
-    outline: 0;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-  
-  #menu li.current_page_item a {
-    border: #000000;
-    border-style: solid;
-    border-width: 0.5px;
-    text-decoration: none;
-  }
+#menu {
+  position: absolute;
+  width: 100%;
+  float: right;
 
-  a:hover {
-  border: #000000;
-	border-style: solid;
-	border-width: 0.5px;
-  
-  }
+}
+
+#menu ul {
+  display: inline-block;
+  align-items: center;
+}
+
+#menu li {
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+}
+
+#menu li a, #menu li  {
+  display: inline-block;
+  margin-left: 1px;
+  padding: 0em 1.4em;
+  letter-spacing: 0.10em;
+  text-decoration: none;
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  outline: 0;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#menu li.current_page_item a {
+  border: #ffffff;
+  border-style: solid;
+  border-width: 0.5px;
+  text-decoration: none;
+}
+
+a:hover {
+border: #ffffff;
+border-style: solid;
+border-width: 0.5px;
+
+}
+
+/* main */
 
 
-/* popup tasks */
-  
+.content {
+
+  display: block;
+  align-content: center;
+  max-width: 800px;
+  margin: auto;
+  margin-top: auto;
+  text-align: center;
+  padding-top: 9em;
+  font-size: 11pt;
+
  
-.callout {
+}
 
-   position: absolute;
-   bottom: 35px;
-   right: 30px;
-   margin-left: 20px;
-       
-    }
+/* button styling  */
+
+button {
+display: grid;
+background-color: rgba(255, 255, 255, 0.568);
+border: none;
+padding: 20px;
+margin-top: 50px;
+font-size: 11pt;
+font-weight: 300;
+text-transform: uppercase;
+width: 300px;
+}
+
+button:hover {
+
+background-color: rgba(255, 255, 255, 0.795);
+}
+
+
+/* form styling  */
+
+input {
+
+padding: 20px;
+margin-top: 30px;
+margin-right: 2%;
+font-size: 1.1vw;
+font-weight: 300;
+text-transform: uppercase;
+border: none;
+background-color: rgba(255, 255, 255, 0.623);
+}
+
+::placeholder { 
+
+color: rgb(46, 46, 46);
+
+}
+
+.name input{
+
+width: 30%;
+}
+
+label {
+
+padding: 20px;
+display: block;
+align-items: center;
+justify-content: center;
+
+}
+
+.inline-radio {
+
+display: flex;
+overflow: auto;
+justify-content: center;
+
+}
+
+.email input {
+
+width: 50%;
+}
+
+.password input {
+
+width: 50%;
+}
+
+.address input {
+width: 70%;
+padding: 20px;
+margin-top: 25px;
+margin-right: 2%;
+font-size: 1.1vw;
+font-weight: 300;
+text-transform: uppercase;
+
+}
+
+.mob input{
+
+width: 50%;
+padding: 20px;
+margin-top: 30px;
+margin-right: 2%;
+font-size: 1.1vw;
+font-weight: 300;
+text-transform: uppercase;
+
+}
+
+.citnum input {
+
+width: 30%;
+padding: 20px;
+margin-top: 30px;
+margin-right: 2%;
+font-size: 1.1vw;
+font-weight: 300;
+text-transform: uppercase;
+
+}
+
+.citizenship input {
+
+width: 40%;
+
+}
+
+.drivers input{
+
+width: 40%;
+}
+
+
+/* Submit button styling  */
+
+.submit button {
+
+display: block;
+align-content: center;
+margin: auto;
+text-align: center;
+font-size: 11pt;
+
+}
+
+.submit a:hover{
+text-decoration: none;
+border: none;
+
+}
+
+
+.submit2 button {
+
+display: block;
+align-content: center;
+margin: auto;
+text-align: center;
+font-size: 11pt;
+margin-top: 5%;
+
+}
+
+.submit3 button {
+
+display: block;
+align-content: center;
+margin: auto;
+text-align: center;
+font-size: 11pt;
+margin-top: 5%;
+margin-bottom: 5%;
+
+}
+
+/* Progressbar styling  */
+
+#progressbar {
+
+width: 100%;
+padding: 0px;
+margin-bottom: 1%;
+
+
+}
+
+
+
+/* Responsive styling  */
+
+@media only screen and (max-width: 500px) {
       
-.callout-header {
+#header {
+  height: 100px;
+  width: 95%;
+  position: absolute;
+  margin-left: 5%;
+  margin-right: 5%;
+   
+}
 
-   padding: 25px 25px;
-   padding-right: 20px;
-   background: rgba(240, 240, 240, 0.327);
-   font-size: 1.3vw;
-   color: rgb(0, 0, 0);
+#menu li a, #menu li  {
+  
+  padding: 0em 0.8em;
+  font-size: 0.5vw;
+  
 
-      }
-      
-  .callout-container {
+}
 
-    padding-top: 10px;
-    padding-left :35px;
-    padding-right :35px;
-    padding-bottom :35px;
-    background-color:rgba(240, 240, 240, 0.327);
-    color:rgb(54, 54, 54);
+p {
 
-      }
-      
-  .closebtn {
+  display: block;
+  font-size: 3vw;
+  
+  
+  }
 
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    color: rgb(73, 73, 73);
-    font-size: 30px;
-    cursor: pointer;
+  h2{
+    font-size: 3vw;
+  }
 
-      }
-      
-  .closebtn:hover {
+  input {
+    font-size: 3vw;
 
-    color: rgb(141, 140, 140);
+  }
 
-      }
-
-  .callout-container ul {
-
-    list-style: none; 
-
-      }
-      
-  .callout-container ul li::before {
-
-    content: "\2022";  
-    color: rgb(61, 61, 61); 
-    size: 5px;
-    font-weight: bolder;; 
-    display: inline-block; 
-    width: 1.1em; 
-    margin-left: -1em; 
-
-      }
-  .done {
-
-    color: rgb(65, 64, 64);
-    text-decoration: line-through;
-
-      }
-
-
-/* greeting */
-
-  .greeting {
-        
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    width: 70%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    color: rgb(0, 0, 0);
-    padding: 55px;
-    text-transform: uppercase;
-    letter-spacing: 0.10em;
-    font-size: 1.3vw;
-
-     }   
-
-/* account balance */
-
-
-  .fundscontainer {
-
-    background-color:rgba(240, 240, 240, 0.327);
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    width: 70%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: rgb(0, 0, 0);
-    padding: 55px;
-    text-transform: uppercase;
-    letter-spacing: 0.10em;
-    font-size: 1.3vw;
-
-      }
-
-  #accname {
-
-    float:left;
-
-      }
-
-  #money {
-
-    float: right;
-    padding-left: 20%;
-
-      }
-
-/* transaction history */
-
-  #more {
-
-    display: none;
-    position: absolute;
-    top:118%;
-    right: 45%;
-    left: 30%;
-    padding: 20px;
-
-    }
-
-  #myBtn {
-
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border: none;
-    padding: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.10em;
-    font-size: 1vw;
-    border: #000000;
-    border-style: solid;
-    border-width: 0.5px;
-    position: absolute;
-    top:120%;
-    right: 83%;
-
-      }
-
-/* responsive styling */
-
-
-      @media only screen and (max-width: 500px) {
-        
-        #header {
-          height: 100px;
-          width: 95%;
-          position: absolute;
-          margin-left: 5%;
-          margin-right: 5%;
-           
-        }
-      
-        #menu li a, #menu li  {
-          
-          padding: 0em 0.8em;
-          font-size: 0.5vw;
-      
-        }
-      
-        p {
-      
-          display: block;
-          font-size: 3vw;
-          
-          
-          }
-      
-          h2{
-            font-size: 3vw;
-          }
-        
-          input {
-            font-size: 3vw;
-      
-          }
-
-          #myBtn { 
-              right: 60%;
-          }
-
-          #more {
-           
-            padding-top: 1%;
-            margin-left: 10%;
-          }
-      
-          
-      }
-
-     
+  
+}
